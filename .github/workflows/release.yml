@@ -50,23 +50,23 @@ jobs:
     strategy:
       matrix:
         build:
-          - linux-musl
-          - linux-musl-arm64
-          - linux-musl-i686
+          # - linux-musl
+          # - linux-musl-arm64
+          # - linux-musl-i686
           - linux-gnu
-          - linux-gnu-arm64
-          - linux-gnu-i686
-          - linux-arm-gnueabihf
-          - linux-musl-armv6
-          - linux-musl-armv7
+          # - linux-gnu-arm64
+          # - linux-gnu-i686
+          # - linux-arm-gnueabihf
+          # - linux-musl-armv6
+          # - linux-musl-armv7
           - linux-android-armv7
           - linux-android-arm64
-          - netbsd
-          - macos
-          - macos-arm64
-          - windows-msvc
-          - windows-msvc-i686
-          - windows-pc-gnu
+          # - netbsd
+          # - macos
+          # - macos-arm64
+          # - windows-msvc
+          # - windows-msvc-i686
+          # - windows-pc-gnu
           # - windows-msvc-arm64
         include:
         - build: linux-musl
