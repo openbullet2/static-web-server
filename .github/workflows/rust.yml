@@ -5,7 +5,7 @@ on:
     types: [created]
 
 env:
-  CRATE_NAME: runiq_ahash
+  CRATE_NAME: static-web-server
   GITHUB_TOKEN: ${{ github.token }}
   RUST_BACKTRACE: 1
 
