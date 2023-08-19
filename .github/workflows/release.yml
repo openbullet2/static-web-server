@@ -23,6 +23,7 @@ jobs:
           echo "SWS_VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
           echo "version is: ${{ env.SWS_VERSION }}"
       - name: Create GitHub release
+        permissions: write-all
         id: release
         uses: actions/create-release@v1
         env:
