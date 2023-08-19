@@ -58,7 +58,7 @@ jobs:
           - linux-arm-gnueabihf
           - linux-musl-armv6
           - linux-musl-armv7
-          # - linux-android-armv7
+          - linux-android-armv7
           - linux-android-arm64
           - netbsd
           - macos
@@ -104,10 +104,10 @@ jobs:
           os: ubuntu-22.04
           rust: stable
           target: armv7-unknown-linux-musleabihf
-        # - build: linux-android-armv7
-        #   os: ubuntu-22.04
-        #   rust: stable
-        #   target: armv7-linux-androideabi
+        - build: linux-android-armv7
+          os: ubuntu-22.04
+          rust: stable
+          target: armv7-linux-androideabi
         - build: linux-android-arm64
           os: ubuntu-22.04
           rust: stable
