@@ -31,11 +31,12 @@ jobs:
             bin: ${{ github.event.repository.name }}
             name: ${{ github.event.repository.name }}-x86_64-unknown-linux-gnu.tar.gz
 
-          - os_name: Linux-i686
-            os: ubuntu-latest
-            target: i686-unknown-linux-gnu
-            bin: ${{ github.event.repository.name }}
-            name: ${{ github.event.repository.name }}-i686-unknown-linux-gnu.tar.gz
+#failed to run custom build command for `ring v0.16.20`
+          # - os_name: Linux-i686
+          #   os: ubuntu-latest
+          #   target: i686-unknown-linux-gnu
+          #   bin: ${{ github.event.repository.name }}
+          #   name: ${{ github.event.repository.name }}-i686-unknown-linux-gnu.tar.gz
             
           - os_name: Linux-aarch64
             os: ubuntu-latest
